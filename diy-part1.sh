@@ -12,3 +12,5 @@
 
 ### 添加第三方订阅源
 # sed -i '$a src-git-full small https://github.com/kenzok8/small' feeds.conf.default
+# 获取ua3f
+git clone https://github.com/SunBK201/UA3F.git package/UA3F
