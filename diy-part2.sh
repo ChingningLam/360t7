@@ -1,6 +1,9 @@
 #!/bin/bash
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.77.1/g' ./package/base-files/files/bin/config_generate
+# 登录地址 192.168.3.1
+sed -i 's/192.168.1.1/192.168.3.1/g' ./package/base-files/files/bin/config_generate
+# 设备名
 sed -i 's/hostname="ImmortalWrt"/hostname="360T7"/g' ./package/base-files/files/bin/config_generate
-sed -i 's/DISTRIB_DESCRIPTION=.*/DISTRIB_DESCRIPTION="ImmortalWrt By IraXu $(date +%Y%m%d)"/g' ./package/base-files/files/etc/openwrt_release
+# 最底部
+sed -i 's/DISTRIB_DESCRIPTION=.*/DISTRIB_DESCRIPTION="ImmortalWrt By ChingningLam $(date +%Y%m%d)"/g' ./package/base-files/files/etc/openwrt_release
