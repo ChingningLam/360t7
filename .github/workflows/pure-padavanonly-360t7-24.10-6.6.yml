@@ -1,4 +1,4 @@
-name: pure-padavanonly-360t7-24.10-6.6
+Name: pure-padavanonly-360t7-24.10-6.6
 
 on:
   repository_dispatch:
@@ -25,6 +25,9 @@ env:
 jobs:
   build:
     runs-on: ubuntu-22.04
+    # 🔑 【核心修复】赋予写权限，解决 Release 403 报错
+    permissions:
+      contents: write
 
     steps:
     # [1] 检出仓库代码
